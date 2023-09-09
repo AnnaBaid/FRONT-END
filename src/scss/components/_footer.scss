@@ -1,0 +1,66 @@
+.footer {
+	background: url(<path-to-image>), lightgray 0% 0% / 100px 100px repeat, #1B1C21;
+	background-blend-mode: soft-light, normal;
+	border-top: 1px solid #F9CE37;
+	padding-top: 57px;
+	padding-bottom: 57px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+	
+
+	&__logo {
+		color: #FFF;
+		font-family: var(--ff-second);
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		position: relative;
+		div:last-child {
+			color: #FFF;
+			font-family: var(--ff);
+			font-size: 16px;
+			font-weight: 400;
+			text-transform: lowercase;
+			position: absolute;
+			bottom: -15px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__nav {}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 56px;
+	}
+	
+
+	&__li {}
+
+	&__a {
+		color: var(--c-header-link);
+			font-family: var(--ff);
+			font-size: 18px;
+			font-weight: 400;
+			text-transform: uppercase;
+			position: relative;
+		
+			
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		gap: 22px;
+	}
+}
+
+
+

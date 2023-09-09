@@ -1,0 +1,122 @@
+.section-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 52px;
+    margin-bottom: 110px;
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__line {
+        position: absolute;
+        left: -160px;
+        bottom: 0;
+    }
+    &__light {
+        position: absolute;
+        left: -126px;
+        top: -293px;
+    }
+
+    &__content {
+        max-width: 493px;
+    }
+
+    &__info {
+        margin-top: 85px;
+    }
+
+    &__title {
+        text-align: end;
+        color: var(--c-header-link);
+        font-family: var(--ff);
+        font-size: 53px;
+        font-weight: 400;
+        letter-spacing: 5.3px;
+        text-transform: uppercase;
+        line-height: 78px;
+        max-width: 600px;
+        margin-bottom: 32px;
+        
+    }
+
+    &__skills {}
+
+        .section-main {
+    
+            &__skills {}
+        }
+    
+    .skills {
+        display: grid;
+        gap: 39px;
+        margin-top: 68px;
+    }
+    
+    .skills-ach {
+        display: flex;
+        align-items: center;
+        gap: 92px;
+    
+        &__item {}
+    
+        &__count {
+            color: var(--c-header-link);
+            font-family: var(--ff);
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 180%;
+            text-transform: capitalize;
+            text-align: center;
+    
+        }
+    
+        &__title {
+            color: var(--c-primary);
+            font-family: var(--ff);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 180%;
+            text-transform: capitalize;
+        }
+    }
+    
+        .skills-tech {
+            border-top: 1px solid #777676;
+            border-bottom: 1px solid #777676;
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+    
+            &__item {}
+        }
+
+    .developer {}
+
+    .cv {
+        border-radius: 29px;
+        border: 1px solid #777676;
+        padding: 32px;
+
+        &__text {
+            color: var(--c-text);
+            font-family: var(--ff-second);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 180%;
+            text-transform: capitalize;
+            padding-bottom: 22px;
+        }
+
+        &__btn {}
+    }
+}
+
+
+
