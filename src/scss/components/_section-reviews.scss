@@ -94,6 +94,15 @@
         justify-content: flex-end;
         align-items: center;
         gap: 16px;
+        img {
+            cursor: pointer;
+            transition: var(--transition);
+            &:hover {
+                transform: translateY(-4px);
+                
+            }
+        }
+        
     }    
 }
 

@@ -15,6 +15,37 @@
     line-height: 180%;
     letter-spacing: 0.64px;
     text-transform: capitalize;
+    transition: var(--transition);
+    &__icon {
+        width: 29px;
+        height: 29px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        transition: var(--transition);
+    }
+    svg {
+        transition: var(--transition);
+        path {
+            transition: var(--transition);
+        }
+    }
+    &:hover {
+        background: var(--c-primary);
+        color: var(--c-btn);
+        .btn__icon {
+            border-color: #777676;
+        }
+        svg {
+            transform: rotate(90deg);
+            path {
+                stroke: var(--c-text-white);
+            }
+
+        }
+    }
 }
 .solution-btn {
     display: inline-flex;
@@ -35,5 +66,19 @@
     outline: 0;
     position: relative;
     z-index: 9;
+    transition: var(--transition);
+    &:hover {
+        transform: translateY(-5px);
+    }
+    img {
+
+        transition: var(--transition);
+    }
+    &._active {
+        background: var(--c-primary);
+        img {
+            transform: rotate(180deg);
+        }
+    }
 
 }
