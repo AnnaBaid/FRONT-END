@@ -7,6 +7,14 @@
     margin-top: 52px;
     margin-bottom: 110px;
     position: relative;
+    @include desktop-small {
+       flex-direction: column-reverse; 
+       gap: 70px;
+    }
+    @include mobile {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     &::before{
         width: 1192px;
         height: 1192px;
@@ -19,6 +27,12 @@
         left: 0;
         top: -576px;
         z-index: -1;
+        @include desktop-small {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
 
     }
 
@@ -26,16 +40,27 @@
         display: flex;
         justify-content: flex-end;
         position: relative;
+        @include tablet {
+            justify-content: center;
+        }
     }
     &__line {
         position: absolute;
         left: -160px;
         bottom: 0;
+        @include tablet {
+            display: none;
+        }
+        
     }
     &__light {
         position: absolute;
         left: -126px;
         top: -293px;
+        @include tablet {
+            display: none;
+        }
+
         &-back {
             position: absolute;
             top: 50%;
@@ -49,6 +74,7 @@
         #Lighter._active{
             opacity: 1;
         }
+
     }
 
     &__content {
@@ -57,6 +83,9 @@
 
     &__info {
         margin-top: 85px;
+        @include mobile {
+            margin-top: 20px;
+        }
     }
 
     &__title {
@@ -70,6 +99,11 @@
         line-height: 78px;
         max-width: 600px;
         margin-bottom: 32px;
+        @include mobile {
+            text-align: center;
+            font-size: 32px;
+            line-height: 54px;
+        }
         
     }
 
@@ -90,6 +124,10 @@
         display: flex;
         align-items: center;
         gap: 92px;
+        @include mobile {
+            flex-direction: column;
+            gap: 30px;
+        }
     
         &__item {}
     
@@ -114,16 +152,22 @@
         }
     }
     
-        .skills-tech {
-            border-top: 1px solid #777676;
-            border-bottom: 1px solid #777676;
-            padding: 14px 24px;
-            display: flex;
-            align-items: center;
-            gap: 60px;
+    .skills-tech {
+        border-top: 1px solid #777676;
+        border-bottom: 1px solid #777676;
+        padding: 14px 24px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
     
             &__item {}
-        }
+    }
 
     .developer {}
 

@@ -64,6 +64,7 @@
       background: transparent;
       display: flex;
     }
+    
   #html .owl-next {
     outline: 0;
       position: absolute;
@@ -207,3 +208,11 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+@media (max-width:480px) {
+      #html .owl-prev{
+        left: -20px;
+      }
+      #html .owl-next {
+        right: -20px;
+      }
+  }

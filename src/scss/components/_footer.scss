@@ -4,12 +4,18 @@
 	border-top: 1px solid #F9CE37;
 	padding-top: 57px;
 	padding-bottom: 57px;
+	
 
 	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		
+		@include tablet-small {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 60px;
+	}
 	}
 	
 
@@ -33,17 +39,18 @@
 		}
 	}
 
-	&__nav {}
-
 	&__ul {
 		display: flex;
 		align-items: center;
 		gap: 56px;
+		@include mobile {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+			}
 	}
 	
-
-	&__li {}
-
 	&__a {
 		color: var(--c-header-link);
 			font-family: var(--ff);

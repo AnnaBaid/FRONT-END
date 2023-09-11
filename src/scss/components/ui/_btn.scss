@@ -67,6 +67,11 @@
     position: relative;
     z-index: 9;
     transition: var(--transition);
+    @include mobile {
+            padding: 14px;
+            font-size: 24px;
+        }
+
     &:hover {
         transform: translateY(-5px);
     }

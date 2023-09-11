@@ -2,6 +2,10 @@
     margin-top: 110px;
     margin-bottom: 72px;
     position: relative;
+    @include tablet {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     
         &::before {
             width: 1192px;
@@ -16,6 +20,12 @@
             transform: translateX(-50%);
             top: -110px;
             z-index: -1;
+            @include desktop-small {
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
     
         }
 
@@ -27,11 +37,17 @@
         letter-spacing: 5.3px;
         text-transform: uppercase;
         margin-bottom: 80px;
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
 
     &__row {
         display: flex;
         gap: 40px;
+        @include tablet {
+            flex-direction: column; 
+        }
     }
 
     &__desc {
@@ -42,11 +58,21 @@
         line-height: 180%;
         letter-spacing: 0.72px;
         margin-bottom: 64px;
+        @include tablet {
+            margin-bottom: 20px;
+        }
     }
 
     &__img {
         max-width: 600px;
         flex-shrink: 0;
+        @include tablet {
+            max-width: 100%;   
+            img {
+                width: 100%;
+            }  
+
+        }
     }
 }
 

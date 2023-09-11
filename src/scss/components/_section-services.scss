@@ -11,6 +11,12 @@
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include desktop-small {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 

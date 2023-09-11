@@ -35,7 +35,7 @@
 		height: 100%;
 		left: 0;
 		top: 0;
-		z-index: 1;
+		z-index: 11;
 		transform: translateX(120%);
 		display: none;
 		transition: var(--transition);
@@ -62,18 +62,19 @@
 		z-index: 9;
 
 		@include tablet {
-			z-index: 9;
+			z-index: 20;
 			position: fixed;
 			width: 70%;
 			height: 100%;
 			flex-direction: column;
 			left: 0;
 			top: 0;
-			background: var(--c-primary);
+			background: var(--c-btn);
 			align-items: center;
 			justify-content: center;
 			transform: translateX(-120%);
 			transition: var(--transition);
+			
 		}
 
 		&._active {
